@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Ticket Service</title>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <img src="../accets/Bild.png" alt="Image" class="mb-2; mt-1" style="height: 150px; float: right;">
+        <div style="clear:both;"></div>
+        <h2>Employee View - Ticket Service</h2>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Ticket ID</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Priority</th>
+                    <th scope="col">Area</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Assigned to</th>
+                    <th scope="col" class="text-center">Status</th>
+                </tr>
+            </thead>
+            <tbody onclick="navigateToLul()" style="cursor:grab;">
+                <tr>
+                    <td>12345</td>
+                    <td>John Doe</td>
+                    <td>High</td>
+                    <td>Leipzig</td>
+                    <td>Network connectivity issue</td>
+                    <td>Faridun Turdiev (a.k.a. GKM)</td>
+                    <td class="text-center" title="this employee is fired, sorry. GKA=Gekündigter Mitarbeiter"><i
+                            class="fas fa-circle text-warning"></i></td>
+                </tr>
+                <tr>
+                    <td>67890</td>
+                    <td>Elon Musk</td>
+                    <td>Medium</td>
+                    <td>Mars</td>
+                    <td>Spacecraft engine failure</td>
+                    <td></td>
+                    <td class="text-center" title="work not in progress"><i class="fas fa-circle text-danger"></i></td>
+                </tr>
+                <tr>
+                    <td>10410</td>
+                    <td>John Wick</td>
+                    <td>Low</td>
+                    <td>Berlin</td>
+                    <td>Drone is not working</td>
+                    <td>Jonas Nauman</td>
+                    <td class="text-center" title="stabiler Typ"><i class="fas fa-circle text-warning"></i></td>
+                </tr>
+                <tr>
+                    <td>11111</td>
+                    <td>Tony Stark</td>
+                    <td>High</td>
+                    <td>Malibu</td>
+                    <td>Malfunction in Iron Man suit</td>
+                    <td>Mohamad Alhusaini</td>
+                    <td class="text-center" title="THE MASTER OF LUL"><i class="fas fa-circle text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>22222</td>
+                    <td>Bart Simpson</td>
+                    <td>Low</td>
+                    <td>Springfield</td>
+                    <td>Prank gone wrong</td>
+                    <td></td>
+                    <td class="text-center" title="work not in progress"><i class="fas fa-circle text-danger"></i></td>
+                </tr>
+                <tr>
+                    <td>45712</td>
+                    <td>Spider Mann</td>
+                    <td>High</td>
+                    <td>München</td>
+                    <td>Spinnen webe geht nicht</td>
+                    <td>Illia Shokotko</td>
+                    <td class="text-center" title="this circle is green, are you blind?"><i
+                            class="fas fa-circle text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>13579</td>
+                    <td>Bruce Wayne</td>
+                    <td>High</td>
+                    <td>Gotham City</td>
+                    <td>Security breach</td>
+                    <td></td>
+                    <td class="text-center" title="work not in progress"><i class="fas fa-circle text-danger"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function navigateToLul() {
+            window.location.href = './lul.html';
+        }
+    </script>
+</body>
+
+</html>

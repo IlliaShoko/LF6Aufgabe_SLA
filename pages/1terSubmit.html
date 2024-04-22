@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <a href="./admiView.html">
+            <img src="../accets/LuL.png" alt="Image" class="mb-4; mt-3" style="height: 250px; float: right;">
+        </a>
+        <h1>Troubleshooting</h1>
+        <br>
+        <h1 style="color: blue; padding: 10px;">Try to turn your Saudecke off and then turn it on again.</h1>
+        <br>
+        <div class="mt-4">
+            <button type="button" class="btn btn-success mr-2" id="okButton">Ok, that works</button>
+            <button type="button" class="btn btn-danger" id="stillNotWorkButton">Still doesn't work</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript code for handling button clicks
+        document.getElementById('okButton').addEventListener('click', function () {
+            alert("Great! Glad to hear it's working now.");
+        });
+
+        document.getElementById('stillNotWorkButton').addEventListener('click', function () {
+            alert("We apologize for the inconvenience. Our support team is contacted for further assistance.");
+        });
+    </script>
+</body>
+
+</html>
